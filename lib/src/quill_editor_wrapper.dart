@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
@@ -236,7 +237,7 @@ class QuillHtmlEditorState extends State<QuillHtmlEditor> {
           initialSourceType: SourceType.html,
           height: _currentHeight,
           onPageStarted: (s) {
-            _editorLoaded = false;
+            //_editorLoaded = false;
           },
           ignoreAllGestures: false,
           width: width,
